@@ -4,3 +4,43 @@ body{
     color: white;
     margin: 0 auto;
 }
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    line-height: 12px;
+}
+
+header h1{
+    font-size: 120px;
+    text-transform: uppercase;
+}
+
+ header span{
+    font-size: 30px;
+ }
+
+ header img{
+    height: 300px;
+ }
+    /*Partie footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #555555;
+    border-top: 5px solid #f25a29;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
