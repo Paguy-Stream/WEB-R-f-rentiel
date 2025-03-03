@@ -55,33 +55,72 @@ footer a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 300px;
-    border: 3px solid #f25a2980;
-    box-shadow: 12px 12px 12px 1px #f25a2980;
+    border: 2px solid #f25a29;
     border-radius: 10px;
 }
 
-.sunmoon{
-    background: url(/images/cocktail_01.jpg);
-    background-size: cover;
+.overlay img{
+    width: 140px;
 }
 
-.mentalux{
-    background: url(/images/cocktail_02.jpg);
-    background-size: cover;
+.overlay p{
+    font-size: 25px;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.cocowhip{
-    background: url(/images/cocktail_03.jpg);
-    background-size: cover;
+#cocktails>div{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #f25a29;
+    box-shadow: 12px 12px 2px 1px #f25a2980;
+    border-radius: 10px;
 }
 
-.citrinus{
-    background: url(/images/cocktail_04.jpg);
-    background-size: cover;
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #f25a29 0%, #373737 100%);
+    
+    /*Disposition flex*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #f25a29;
+    border-radius: 10px;
 }
 
-.spicherry{
-    background: url(/images/cocktail_05.jpg);
-    background-size: cover;
+#cocktails>div:hover .overlay{
+    z-index: 1;
+    transform: rottate(360deg);
+}
+
+.overlay{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    top: 100%;
+    transition: all is;
+    background: linear-gradient(180deg, #f25a29 0%, #373737 100%);
+
+    /*Disposition flex*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #f25a29;
+    border-radius: 10px;
+}
+
+#cocktails>div:hover .overlay{
+    z-index: 1;
+    transform: rottate(360deg);
+    top:0px
 }
